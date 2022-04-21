@@ -22,7 +22,7 @@
   "author": "Hideaki Matsunami <carbon0409@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "gas-entry-generator": "^2.1.0"
+    "gas-entry-generator": "git+https://github.com/misogihagi/gas-entry-generator.git"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
