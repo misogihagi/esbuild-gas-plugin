@@ -4,7 +4,10 @@ const esbuild = require('esbuild')
 const { GasPlugin } = require('../../dist');
 
 test.beforeEach(() => {
-  fs.rmdirSync('./dist', { recursive: true })
+  ((path)=>{
+    if(fs.existsSync(path))
+    fs.rmSync(path, { recursive: true })
+  })('./dist')
 })
 
 test('declare global functions', async t => {
